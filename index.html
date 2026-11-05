@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+
+<body>
+
+<div id="imagePopup">
+
+    <span id="closeImage">✖</span>
+
+    <img id="popupImage">
+
+</div>
+
+<div id="balloons"></div>
+
+<!-- Loading Screen -->
+
+<section id="loading">
+
+<img src="images/photo.1.jpeg" class="teddy">
+
+<h2>Loading Something Special...</h2>
+
+<div class="bar">
+
+<div class="progress"></div>
+
+</div>
+
+<p>Just For You 💖</p>
+
+</section>
+
+<!-- Welcome Screen -->
+
+<section id="welcome">
+
+<div class="card">
+
+<img src="images/profile.jpeg" class="profile" id="profilePic">
+
+<h1>It's Your Special Day 🌸</h1>
+
+<p>I made something special just for you ❤️</p>
+
+<button id="startBtn">
+
+START 💕
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Lock Screen -->
+
+<section id="lockScreen">
+
+<div class="lockCard">
+
+<img src="images/profile.jpeg" class="profile" id="lockProfile">
+
+<h2>LOCKED 🔒</h2>
+
+<p class="pinHint">🔑 PIN: 2026</p>
+
+<p>Enter PIN</p>
+
+<div class="dots">
+
+<div class="dot"></div>
+
+<div class="dot"></div>
+
+<div class="dot"></div>
+
+<div class="dot"></div>
+
+</div>
+
+<div class="keypad">
+
+<button onclick="addNumber('1')">1</button>
+<button onclick="addNumber('2')">2</button>
+<button onclick="addNumber('3')">3</button>
+
+<button onclick="addNumber('4')">4</button>
+<button onclick="addNumber('5')">5</button>
+<button onclick="addNumber('6')">6</button>
+
+<button onclick="addNumber('7')">7</button>
+<button onclick="addNumber('8')">8</button>
+<button onclick="addNumber('9')">9</button>
+
+<button onclick="removeNumber()">⌫</button>
+<button onclick="addNumber('0')">0</button>
+<button onclick="checkPin()">✔</button>
+
+</div>
+
+</div>
+
+</section>
+<!-- Gift Screen -->
+
+<section id="giftScreen">
+
+<div class="giftBox">
+
+<h1>🎁</h1>
+
+<h2>A Surprise Is Waiting...</h2>
+
+<p>Click the Gift 💖</p>
+
+<button id="openGift">Open Gift</button>
+
+</div>
+
+</section>
+<!-- Birthday Intro -->
+
+<section id="birthdayIntro">
+
+    <div class="introCard">
+
+        <img src="images/teddy.png" class="introTeddy">
+
+        <h1>Happy Birthday My Girl 🎀</h1>
+
+      <div class="counter">
+
+    <div>
+        <h2 id="years"></h2>
+        <span>YEARS</span>
+    </div>
+
+    <div>
+        <h2 id="months"></h2>
+        <span>MONTHS</span>
+    </div>
+
+    <div>
+        <h2 id="days"></h2>
+        <span>DAYS</span>
+    </div>
+
+</div>
+        <button id="nextPage">NEXT ➜</button>
+
+    </div>
+
+</section>
+
+
+<!-- Birthday Page -->
+
+<section id="birthdayPage">
+
+<div class="birthdayCard">
+
+<img src="images/teddy.png" class="birthdayTeddy" alt="Cute Teddy">
+
+
+<div class="introBox">
+
+<h1>💖 Happy Birthday My Girl 💖</h1>
+
+<p class="introText">
+Every moment with you is the most beautiful memory of my life. 🌸
+</p>
+
+</div>
+
+
+<div class="swiper mySlider">
+
+<div class="swiper-wrapper">
+
+
+<div class="swiper-slide">
+<img src="images/photo.1.jpeg">
+</div>
+
+
+<div class="swiper-slide">
+<img src="images/photo.2.jpeg">
+</div>
+
+
+<div class="swiper-slide">
+<img src="images/photo.3.jpeg">
+</div>
+
+
+<div class="swiper-slide">
+<img src="images/photo.4.jpeg">
+</div>
+
+
+</div>
+
+
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+
+
+</div>
+
+
+<button id="letterBtn">
+💌 A Letter For You
+</button>
+
+
+<div id="letterPopup">
+
+<div class="letterBox">
+
+<span id="closeLetter">✖</span>
+
+<h2>💖 My Dearest Girl 💖</h2>
+
+<p id="letterMessage"></p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
