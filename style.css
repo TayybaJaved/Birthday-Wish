@@ -1254,3 +1254,102 @@ button {
         max-width: 480px;
     }
 }
+
+/* ===== FINAL MOBILE FIXES ===== */
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+    height: auto;
+}
+
+/* Allow screens to scroll on small devices */
+#welcome,
+#lockScreen,
+#giftScreen,
+#birthdayIntro,
+#birthdayPage {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Keep all cards inside mobile screen */
+.card,
+.lockCard,
+.giftBox,
+.introCard,
+.birthdayCard {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Birthday page scrolling */
+#birthdayPage .birthdayCard {
+    max-height: none;
+    margin: 20px auto;
+}
+
+/* Intro screen */
+#birthdayIntro .introCard {
+    padding: 25px 15px;
+}
+
+/* Image slider */
+.mySlider {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+}
+
+/* Popup images */
+#imagePopup img {
+    max-width: 92vw;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    #loading h2 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .bar {
+        width: 80%;
+        max-width: 320px;
+    }
+
+    .card h1,
+    .introCard h1,
+    .birthdayCard h1 {
+        font-size: 25px;
+    }
+
+    .counter {
+        gap: 10px;
+    }
+
+    .counter h2 {
+        font-size: 35px;
+    }
+
+    #letterMessage {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    #closeImage {
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+    }
+}
